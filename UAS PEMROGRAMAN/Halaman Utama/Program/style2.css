@@ -1,0 +1,91 @@
+/* --- Program Section Styling --- */
+.program-section {
+    padding: 80px 8%;
+    background-color: #f1f3f5; /* Background abu-abu muda sesuai gambar */
+}
+
+.table-container {
+    margin-bottom: 80px;
+}
+
+.table-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Styling Tabel */
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.program-table thead {
+    background-color: #343a40; /* Warna gelap sesuai gambar */
+    color: #fff;
+    text-align: left;
+}
+
+.program-table th, .program-table td {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.program-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Signature Programs Cards */
+.sub-section-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.program-cards .card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.program-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.program-cards h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.program-cards p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .program-table {
+        display: block;
+        overflow-x: auto; /* Agar tabel bisa di-scroll di layar HP */
+    }
+}
